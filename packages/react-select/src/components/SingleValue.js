@@ -37,7 +37,7 @@ const SingleValue = (props: SingleValueProps) => {
   const { children, className, cx, getStyles, isDisabled, innerProps } = props;
   return (
     <div
-      css={getStyles('singleValue', props)}
+      style={getStyles('singleValue', props)}
       className={cx(
         {
           'single-value': true,

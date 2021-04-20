@@ -25,7 +25,7 @@ const Placeholder = (props: PlaceholderProps) => {
   const { children, className, cx, getStyles, innerProps } = props;
   return (
     <div
-      css={getStyles('placeholder', props)}
+      style={getStyles('placeholder', props)}
       className={cx(
         {
           placeholder: true,

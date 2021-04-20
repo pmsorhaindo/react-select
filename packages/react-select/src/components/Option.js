@@ -82,7 +82,7 @@ const Option = (props: OptionProps) => {
   } = props;
   return (
     <div
-      css={getStyles('option', props)}
+      style={getStyles('option', props)}
       className={cx(
         {
           option: true,

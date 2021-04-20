@@ -323,7 +323,7 @@ const Menu = (props: MenuProps) => {
 
   return (
     <div
-      css={getStyles('menu', props)}
+      style={getStyles('menu', props)}
       className={cx({ menu: true }, className)}
       ref={innerRef}
       {...innerProps}
@@ -384,7 +384,7 @@ export const MenuList = (props: MenuListComponentProps) => {
   } = props;
   return (
     <div
-      css={getStyles('menuList', props)}
+      style={getStyles('menuList', props)}
       className={cx(
         {
           'menu-list': true,
@@ -428,7 +428,7 @@ export const NoOptionsMessage = (props: NoticeProps) => {
   const { children, className, cx, getStyles, innerProps } = props;
   return (
     <div
-      css={getStyles('noOptionsMessage', props)}
+      style={getStyles('noOptionsMessage', props)}
       className={cx(
         {
           'menu-notice': true,
@@ -450,7 +450,7 @@ export const LoadingMessage = (props: NoticeProps) => {
   const { children, className, cx, getStyles, innerProps } = props;
   return (
     <div
-      css={getStyles('loadingMessage', props)}
+      style={getStyles('loadingMessage', props)}
       className={cx(
         {
           'menu-notice': true,
@@ -537,7 +537,7 @@ export class MenuPortal extends Component<MenuPortalProps, MenuPortalState> {
     // same wrapper element whether fixed or portalled
     const menuWrapper = (
       <div
-        css={getStyles('menuPortal', state)}
+        style={getStyles('menuPortal', state)}
         className={cx(
           {
             'menu-portal': true,

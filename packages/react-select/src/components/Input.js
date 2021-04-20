@@ -44,7 +44,7 @@ const Input = (props: InputProps) => {
   );
 
   return (
-    <div css={getStyles('input', props)}>
+    <div style={getStyles('input', props)}>
       <AutosizeInput
         className={cx({ input: true }, className)}
         inputRef={innerRef}

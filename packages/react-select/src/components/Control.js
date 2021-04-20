@@ -70,7 +70,7 @@ const Control = (props: ControlProps) => {
   return (
     <div
       ref={innerRef}
-      css={getStyles('control', props)}
+      style={getStyles('control', props)}
       className={cx(
         {
           control: true,

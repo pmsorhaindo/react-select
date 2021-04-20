@@ -74,7 +74,7 @@ export const DropdownIndicator = (props: IndicatorProps) => {
   const { children, className, cx, getStyles, innerProps } = props;
   return (
     <div
-      css={getStyles('dropdownIndicator', props)}
+      style={getStyles('dropdownIndicator', props)}
       className={cx(
         {
           indicator: true,
@@ -94,7 +94,7 @@ export const ClearIndicator = (props: IndicatorProps) => {
   const { children, className, cx, getStyles, innerProps } = props;
   return (
     <div
-      css={getStyles('clearIndicator', props)}
+      style={getStyles('clearIndicator', props)}
       className={cx(
         {
           indicator: true,
@@ -135,7 +135,7 @@ export const IndicatorSeparator = (props: IndicatorProps) => {
   return (
     <span
       {...innerProps}
-      css={getStyles('indicatorSeparator', props)}
+      style={getStyles('indicatorSeparator', props)}
       className={cx({ 'indicator-separator': true }, className)}
     />
   );
@@ -207,7 +207,7 @@ export const LoadingIndicator = (props: LoadingIconProps) => {
 
   return (
     <div
-      css={getStyles('loadingIndicator', props)}
+      style={getStyles('loadingIndicator', props)}
       className={cx(
         {
           indicator: true,
