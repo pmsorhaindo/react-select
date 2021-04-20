@@ -15,7 +15,7 @@ export default function DummyInput({
     <input
       ref={innerRef}
       {...props}
-      css={{
+      style={{
         label: 'dummyInput',
         // get rid of any default styles
         background: 0,

@@ -67,7 +67,7 @@ const Chain = props => (
   <Svg
     alt="Link to"
     size={16}
-    css={{
+    style={{
       color: '#4C9AFF',
       paddingRight: 10,
       opacity: 0,
@@ -102,7 +102,7 @@ const Heading = props => {
     <Tag id={slug} css={css}>
       <RRLink
         to={`#${slug}`}
-        css={{
+        style={{
           color: 'inherit',
           position: 'relative',
           textDecoration: 'none',
@@ -121,7 +121,7 @@ const Heading = props => {
 // eslint-disable-next-line no-unused-vars
 export const Code = ({ children, inline, literal, nodeKey }: any) => (
   <code
-    css={{
+    style={{
       backgroundColor: 'rgba(38, 132, 255, 0.08)',
       color: '#172B4D',
       fontSize: '90%',
@@ -160,7 +160,7 @@ CodeBlock.defaultProps = { codeinfo: [], language: 'jsx' };
 
 const Blockquote = ({ nodeKey, ...props }) => (
   <blockquote
-    css={{
+    style={{
       color: '#7A869A',
       fontStyle: 'italic',
       marginLeft: 0,

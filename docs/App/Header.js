@@ -71,7 +71,7 @@ const headerSelectStyles = {
 
 const Gradient = props => (
   <div
-    css={{
+    style={{
       backgroundColor: '#2684FF',
       backgroundImage: 'linear-gradient(135deg, #2684FF 0%, #0747A6 100%)',
       color: 'white',
@@ -87,7 +87,7 @@ const Gradient = props => (
 );
 const Container = props => (
   <div
-    css={{
+    style={{
       boxSizing: 'border-box',
       maxWidth: 800,
       marginLeft: 'auto',
@@ -155,7 +155,7 @@ class Header extends Component<HeaderProps, HeaderState> {
         >
           <Container>
             <h1
-              css={{
+              style={{
                 fontSize: '2.4em',
                 fontWeight: 'bold',
                 lineHeight: 1,
@@ -188,7 +188,7 @@ const Collapse = ({ height, isCollapsed, innerRef, ...props }) => {
   return (
     <div
       ref={innerRef}
-      css={{
+      style={{
         height: isCollapsed ? 0 : height,
         overflow: isCollapsed ? 'hidden' : null,
         transition: 'height 260ms cubic-bezier(0.2, 0, 0, 1)',
@@ -200,13 +200,13 @@ const Collapse = ({ height, isCollapsed, innerRef, ...props }) => {
 
 const Content = ({ onChange, stars }) => (
   <div
-    css={{
+    style={{
       marginTop: 16,
 
       [largeDevice]: { display: 'flex' },
     }}
   >
-    <div css={{ flex: 1, [largeDevice]: { paddingRight: 30 } }}>
+    <div style={{ flex: 1, [largeDevice]: { paddingRight: 30 } }}>
       <p
         style={{
           fontSize: '1.25em',
@@ -217,7 +217,7 @@ const Content = ({ onChange, stars }) => (
         A flexible and beautiful Select Input control for ReactJS with
         multiselect, autocomplete, async and creatable support.
       </p>
-      <div css={{ flex: 1, alignItems: 'center' }}>
+      <div style={{ flex: 1, alignItems: 'center' }}>
         <GitHubButton
           count={stars}
           repo="https://github.com/jedwatson/react-select"
@@ -226,7 +226,7 @@ const Content = ({ onChange, stars }) => (
       </div>
     </div>
     <div
-      css={{
+      style={{
         color: 'black',
         flex: '0 1 320px',
         [smallDevice]: {

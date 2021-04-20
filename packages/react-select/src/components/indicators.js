@@ -14,7 +14,7 @@ const Svg = ({ size, ...props }: { size: number }) => (
     viewBox="0 0 20 20"
     aria-hidden="true"
     focusable="false"
-    css={{
+    style={{
       display: 'inline-block',
       fill: 'currentColor',
       lineHeight: 1,
@@ -178,7 +178,7 @@ export const loadingIndicatorCSS = ({
 type DotProps = { delay: number, offset: boolean };
 const LoadingDot = ({ delay, offset }: DotProps) => (
   <span
-    css={{
+    style={{
       animation: `${loadingDotAnimations} 1s ease-in-out ${delay}ms infinite;`,
       backgroundColor: 'currentColor',
       borderRadius: '1em',

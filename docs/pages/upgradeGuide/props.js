@@ -140,7 +140,7 @@ see \`createFilter()\`
 
 const Table = ({ children }) => (
   <table
-    css={{
+    style={{
       width: '100%',
       marginTop: '30px',
       borderCollapse: 'collapse',
@@ -152,7 +152,7 @@ const Table = ({ children }) => (
 
 const Header = ({ children }) => (
   <td
-    css={{
+    style={{
       fontWeight: 'bold',
       padding: '4px 8px 4px 0',
       borderBottom: '3px solid #eee',
@@ -164,7 +164,7 @@ const Header = ({ children }) => (
 
 const Cell = ({ children }) => (
   <td
-    css={{
+    style={{
       fontSize: '90%',
       padding: '4px 8px 4px 0',
       borderBottom: '1px solid #eee',

@@ -107,7 +107,7 @@ export default class ExampleWrapper extends Component {
 
 const ExampleHeading = (props: any) => (
   <div
-    css={{
+    style={{
       alignItems: 'center',
       display: 'flex',
       justifyContent: 'space-between',
@@ -145,7 +145,7 @@ type ActionProps = {
 const Action = ({ css, tag: Tag = 'button', ...props }: ActionProps) => {
   return (
     <Tag
-      css={{
+      style={{
         alignItems: 'center',
         background: 0,
         border: 0,
@@ -182,7 +182,7 @@ const Action = ({ css, tag: Tag = 'button', ...props }: ActionProps) => {
 };
 const Actions = ({ show, ...props }) => (
   <div
-    css={{
+    style={{
       alignItems: 'center',
       display: 'flex',
       justifyContent: 'space-between',
@@ -204,7 +204,7 @@ const Spinner = () => {
   const size = 16;
 
   return (
-    <div css={{ height: size, width: size }}>
+    <div style={{ height: size, width: size }}>
       <style>{`
       @keyframes rotator {
         0% { transform: rotate(0deg); }
@@ -223,14 +223,14 @@ const Spinner = () => {
        }
       }`}</style>
       <svg
-        css={{ animation: `rotator ${duration} linear infinite` }}
+        style={{ animation: `rotator ${duration} linear infinite` }}
         width={size}
         height={size}
         viewBox="0 0 66 66"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          css={{
+          style={{
             strokeDasharray: offset,
             strokeDashoffset: 0,
             transformOrigin: 'center',
