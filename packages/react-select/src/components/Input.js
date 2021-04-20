@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { type ElementRef } from 'react';
-import { jsx } from '@emotion/react';
+import React, { type ElementRef } from 'react';
 import AutosizeInput from 'react-input-autosize';
 
 import type { CommonProps } from '../types';

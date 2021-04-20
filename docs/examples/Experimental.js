@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { Component } from 'react';
-import { jsx } from '@emotion/react';
+import React, { Component } from 'react';
 import moment from 'moment';
 import chrono from 'chrono-node';
 

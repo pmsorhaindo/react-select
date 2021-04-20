@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { type Node } from 'react';
-import { jsx, keyframes } from '@emotion/react';
+import React, { type Node } from 'react';
 
 import type { CommonProps, Theme } from '../types';
 
@@ -147,7 +145,7 @@ export const IndicatorSeparator = (props: IndicatorProps) => {
 // Loading
 // ==============================
 
-const loadingDotAnimations = keyframes`
+const loadingDotAnimations = `
   0%, 80%, 100% { opacity: 0; }
   40% { opacity: 1; }
 `;

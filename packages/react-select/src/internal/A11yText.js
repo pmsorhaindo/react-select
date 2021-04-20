@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { type ElementConfig } from 'react';
-import { jsx } from '@emotion/react';
+import React, { type ElementConfig } from 'react';
 
 // Assistive text to describe visual elements. Hidden for sighted users.
 const A11yText = (props: ElementConfig<'span'>) => (

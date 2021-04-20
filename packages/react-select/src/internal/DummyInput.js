@@ -1,6 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { jsx } from '@emotion/react';
+import React from 'react';
 
 export default function DummyInput({
   in: inProp,
@@ -10,7 +9,6 @@ export default function DummyInput({
   enter,
   exit,
   innerRef,
-  emotion,
   ...props
 }: any) {
   return (

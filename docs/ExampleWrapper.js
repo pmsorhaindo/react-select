@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import { jsx } from '@emotion/react'; // eslint-disable-line no-unused-vars
 import { Component } from 'react';
 import CodeSandboxer from 'react-codesandboxer';
 import { CodeBlock } from './markdown/renderer';
@@ -30,7 +29,7 @@ export default class ExampleWrapper extends Component {
     if (!showCode || !raw) {
       return null;
     } else {
-      return <CodeBlock literal={raw.default} codeinfo={['jsx']} />;
+      return <CodeBlock literal={raw.default} codeinfo={[]} />;
     }
   };
 

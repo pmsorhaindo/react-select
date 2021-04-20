@@ -1,13 +1,11 @@
 // @flow
-/** @jsx jsx */
-import {
+import React, {
   createContext,
   Component,
   type Element as ReactElement,
   type ElementRef,
   type Node,
 } from 'react';
-import { jsx } from '@emotion/react';
 import { createPortal } from 'react-dom';
 
 import {

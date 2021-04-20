@@ -1,7 +1,6 @@
 // @flow
-/** @jsx jsx */
-import { jsx } from '@emotion/react';
-
+import React from 'react';
+import { ClassNames } from '@emotion/react';
 type Props = { count: number, repo: string };
 
 const StarButton = ({ count, repo }: Props) => (

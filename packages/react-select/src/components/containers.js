@@ -1,7 +1,6 @@
 // @flow
-/** @jsx jsx */
+import React from 'react';
 import { type Node } from 'react';
-import { jsx } from '@emotion/react';
 import type { CommonProps, KeyboardEventHandler } from '../types';
 
 // ==============================

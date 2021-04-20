@@ -1,7 +1,6 @@
 // @flow
-/** @jsx jsx */
+import React from 'react';
 import { Component, type ElementRef } from 'react';
-import { jsx } from '@emotion/react';
 import { Route, Switch } from 'react-router-dom';
 
 import type { RouterProps } from '../types';

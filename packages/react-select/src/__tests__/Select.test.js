@@ -12,9 +12,6 @@ import {
 } from './constants';
 import Select from '../Select';
 
-import { matchers } from '@emotion/jest';
-
-expect.extend(matchers);
 
 const BASIC_PROPS = {
   className: 'react-select',

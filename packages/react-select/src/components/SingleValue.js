@@ -1,7 +1,6 @@
 // @flow
-/** @jsx jsx */
+import React from 'react';
 import type { CommonProps } from '../types';
-import { jsx } from '@emotion/react';
 
 type State = {
   /** Whether this is disabled. */

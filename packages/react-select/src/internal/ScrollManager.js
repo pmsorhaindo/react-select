@@ -1,6 +1,4 @@
 // @flow
-/** @jsx jsx */
-import { jsx } from '@emotion/react';
 import React, { type Element } from 'react';
 import useScrollCapture from './useScrollCapture';
 import useScrollLock from './useScrollLock';

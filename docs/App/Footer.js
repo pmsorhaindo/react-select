@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
 import { type Node } from 'react';
-import { jsx } from '@emotion/react';
 
 // const smallDevice = '@media (max-width: 769px)';
 const largeDevice = '@media (min-width: 770px)';

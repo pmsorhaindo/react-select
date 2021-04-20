@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { type Node } from 'react';
-import { jsx } from '@emotion/react';
+import React, { type Node } from 'react';
 import type { CommonProps } from '../types';
 
 export type PlaceholderProps = CommonProps & {

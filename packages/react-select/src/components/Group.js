@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { type Node, type ComponentType } from 'react';
-import { jsx } from '@emotion/react';
+import React, { type Node, type ComponentType } from 'react';
 import { cleanCommonProps } from '../utils';
 
 import type { CommonProps } from '../types';
