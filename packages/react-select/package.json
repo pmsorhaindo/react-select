@@ -1,6 +1,6 @@
 {
   "name": "react-select-emotionless",
-  "version": "4.3.4",
+  "version": "4.3.5",
   "description": "A Select control built with and for ReactJS w/o emotion",
   "main": "dist/react-select-emotionless.cjs.js",
   "module": "dist/react-select-emotionless.esm.js",
