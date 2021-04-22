@@ -1437,8 +1437,9 @@ export default class Select extends Component<Props, State> {
     } = this.props;
     const { selectValue, focusedValue, isFocused } = this.state;
 
+
     if (!this.hasValue() || !controlShouldRenderValue) {
-      console.log('common p', commonProps);
+      console.log('common p', commonProps, this.hasValue);
       return inputValue ? null : (
         <Placeholder
           {...commonProps}
