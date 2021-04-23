@@ -1168,7 +1168,6 @@ export default class Select extends Component<Props, State> {
   // ==============================
 
   handleInputChange = (event: SyntheticKeyboardEvent<HTMLInputElement>) => {
-    console.log('e', event);
     const inputValue = event.currentTarget.value;
     this.setState({ inputIsHiddenAfterUpdate: false });
     this.onInputChange(inputValue, { action: 'input-change' });
@@ -1377,6 +1376,8 @@ export default class Select extends Component<Props, State> {
       'aria-labelledby': this.props['aria-labelledby'],
     };
 
+    console.log('render input', isSearchable);
+
     if (!isSearchable) {
       // use a dummy input to maintain focus/blur functionality
       return (
@@ -1384,7 +1385,7 @@ export default class Select extends Component<Props, State> {
           id={id}
           innerRef={this.getInputRef}
           onBlur={this.onInputBlur}
-          onChange={this.handleInputChange}
+          onChange={noop}
           onFocus={this.onInputFocus}
           readOnly
           disabled={isDisabled}
@@ -1437,9 +1438,7 @@ export default class Select extends Component<Props, State> {
     } = this.props;
     const { selectValue, focusedValue, isFocused } = this.state;
 
-
     if (!this.hasValue() || !controlShouldRenderValue) {
-      console.log('common p', commonProps, this.hasValue, inputValue);
       return inputValue ? null : (
         <Placeholder
           {...commonProps}
