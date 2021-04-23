@@ -1169,7 +1169,6 @@ export default class Select extends Component<Props, State> {
 
   handleInputChange = (event: SyntheticKeyboardEvent<HTMLInputElement>) => {
     const inputValue = event.currentTarget.value;
-    console.log('handle Input Change event', inputValue)
     this.setState({ inputIsHiddenAfterUpdate: false });
     this.onInputChange(inputValue, { action: 'input-change' });
     if (!this.props.menuIsOpen) {
@@ -1376,8 +1375,6 @@ export default class Select extends Component<Props, State> {
       'aria-label': this.props['aria-label'],
       'aria-labelledby': this.props['aria-labelledby'],
     };
-
-    console.log('render input', isSearchable);
 
     if (!isSearchable) {
       // use a dummy input to maintain focus/blur functionality
