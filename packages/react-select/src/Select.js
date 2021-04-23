@@ -1384,7 +1384,7 @@ export default class Select extends Component<Props, State> {
           id={id}
           innerRef={this.getInputRef}
           onBlur={this.onInputBlur}
-          onChange={noop}
+          onChange={this.handleInputChange}
           onFocus={this.onInputFocus}
           readOnly
           disabled={isDisabled}
