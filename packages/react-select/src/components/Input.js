@@ -42,6 +42,7 @@ const Input = (props: InputProps) => {
   const { innerRef, isDisabled, isHidden, ...innerProps } = cleanCommonProps(
     props
   );
+  console.log('input props', props)
 
   return (
     <div style={getStyles('input', props)}>
