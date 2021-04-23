@@ -1439,7 +1439,7 @@ export default class Select extends Component<Props, State> {
 
 
     if (!this.hasValue() || !controlShouldRenderValue) {
-      console.log('common p', commonProps, this.hasValue);
+      console.log('common p', commonProps, this.hasValue, inputValue);
       return inputValue ? null : (
         <Placeholder
           {...commonProps}
