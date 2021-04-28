@@ -20,7 +20,7 @@ export const inputCSS = ({
   isDisabled,
   theme: { spacing, colors },
 }: InputProps) => ({
-  margin: spacing.baseUnit / 2,
+  margin: 0,
   paddingBottom: spacing.baseUnit / 2,
   paddingTop: spacing.baseUnit / 2,
   visibility: isDisabled ? 'hidden' : 'visible',
