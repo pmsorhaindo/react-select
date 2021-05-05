@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { type Node, type ElementRef } from 'react';
-import { jsx } from '@emotion/react';
+import React, { type Node, type ElementRef } from 'react';
 
 import type { CommonProps, PropsWithStyles } from '../types';
 
@@ -72,7 +70,7 @@ const Control = (props: ControlProps) => {
   return (
     <div
       ref={innerRef}
-      css={getStyles('control', props)}
+      style={getStyles('control', props)}
       className={cx(
         {
           control: true,

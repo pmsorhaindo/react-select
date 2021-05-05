@@ -1,6 +1,6 @@
 {
-  "main": "dist/react-select.cjs.js",
-  "module": "dist/react-select.esm.js",
+  "main": "dist/react-select-emotionless.cjs.js",
+  "module": "dist/react-select-emotionless.esm.js",
   "preconstruct": {
     "source": "../src/Creatable"
   }

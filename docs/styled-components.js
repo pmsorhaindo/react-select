@@ -1,6 +1,4 @@
 // @flow
-/** @jsx emotionJSX */
-import { jsx as emotionJSX } from '@emotion/react';
 
 import SyntaxHighlighter, {
   registerLanguage,
@@ -24,7 +22,7 @@ registerLanguage('jsx', jsx);
 
 export const Hr = () => (
   <div
-    css={{
+    style={{
       backgroundColor: 'hsl(0, 0%, 90%)',
       height: 2,
       marginBottom: '2em',
@@ -35,7 +33,7 @@ export const Hr = () => (
 
 export const Note = ({ Tag = 'div', ...props }: { Tag?: string }) => (
   <Tag
-    css={{
+    style={{
       color: 'hsl(0, 0%, 40%)',
       display: 'inline-block',
       fontSize: 12,
@@ -46,8 +44,8 @@ export const Note = ({ Tag = 'div', ...props }: { Tag?: string }) => (
   />
 );
 
-export const H1 = (props: any) => <h1 css={{ marginTop: 0 }} {...props} />;
-export const H2 = (props: any) => <h2 css={{ marginTop: '2em' }} {...props} />;
+export const H1 = (props: any) => <h1 style={{ marginTop: 0 }} {...props} />;
+export const H2 = (props: any) => <h2 style={{ marginTop: '2em' }} {...props} />;
 
 export const ColorSample = ({
   name,
@@ -57,7 +55,7 @@ export const ColorSample = ({
   name: string,
 }) => (
   <div
-    css={{
+    style={{
       display: 'inline-flex',
       marginBottom: '0.5em',
       alignItems: 'center',
@@ -66,7 +64,7 @@ export const ColorSample = ({
   >
     <span
       title={color}
-      css={{
+      style={{
         marginRight: '0.5em',
         display: 'inline-block',
         borderRadius: 3,
@@ -85,7 +83,7 @@ export const ColorSample = ({
 
 export const Code = (props: {}) => (
   <code
-    css={{
+    style={{
       backgroundColor: 'rgba(38, 132, 255, 0.08)',
       // color: '#0747A6',
       fontSize: '85%',

@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { Component } from 'react';
-import { jsx } from '@emotion/react';
+import React, { Component } from 'react';
 import moment from 'moment';
 import chrono from 'chrono-node';
 
@@ -116,7 +114,7 @@ const Group = props => {
     theme,
   } = props;
   return (
-    <div aria-label={label} css={getStyles('group', props)} {...innerProps}>
+    <div aria-label={label} style={getStyles('group', props)} {...innerProps}>
       <Heading theme={theme} getStyles={getStyles} cx={cx} {...headingProps}>
         {label}
       </Heading>

@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/react';
 import Select from 'react-select';
 import { colourOptions } from '../data';
 
@@ -18,7 +16,7 @@ const Option = (props: OptionProps) => {
   return (
     <div
       ref={innerRef}
-      css={getStyles('option', props)}
+      style={getStyles('option', props)}
       className={cx(
         {
           option: true,

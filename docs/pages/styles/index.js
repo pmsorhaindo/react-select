@@ -106,9 +106,9 @@ export default function Styles() {
           options={...}
         />
       );
-      ~~~ 
+      ~~~
 
-    
+
     ## Select Props
     In the second argument \`state\`, you have access to \`selectProps\` which will allow you to gain access to
     your own arguments passed into the \`Select\` body.
@@ -279,7 +279,7 @@ export default function Styles() {
     ###### Theme colors
 
     ${(
-      <div css={{ marginTop: '1em' }}>
+      <div style={{ marginTop: '1em' }}>
         {Object.keys(defaultTheme.colors).map(key => (
           <ColorSample key={key} name={key} color={defaultTheme.colors[key]} />
         ))}

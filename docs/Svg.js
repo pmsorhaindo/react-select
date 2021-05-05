@@ -1,6 +1,4 @@
 // @flow
-/** @jsx jsx */
-import { jsx } from '@emotion/react';
 
 const Svg = ({ size, ...props }: { size: number }) => (
   <svg
@@ -9,7 +7,7 @@ const Svg = ({ size, ...props }: { size: number }) => (
     role="image"
     viewBox="0 0 20 20"
     width={size}
-    css={{
+    style={{
       display: 'inline-block',
       fill: 'currentColor',
       flexShrink: 0,

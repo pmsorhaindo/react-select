@@ -1,7 +1,5 @@
 // @flow
-/** @jsx jsx */
-import { type Node } from 'react';
-import { jsx, keyframes } from '@emotion/react';
+import React, { type Node } from 'react';
 
 import type { CommonProps, Theme } from '../types';
 
@@ -16,7 +14,7 @@ const Svg = ({ size, ...props }: { size: number }) => (
     viewBox="0 0 20 20"
     aria-hidden="true"
     focusable="false"
-    css={{
+    style={{
       display: 'inline-block',
       fill: 'currentColor',
       lineHeight: 1,
@@ -76,7 +74,7 @@ export const DropdownIndicator = (props: IndicatorProps) => {
   const { children, className, cx, getStyles, innerProps } = props;
   return (
     <div
-      css={getStyles('dropdownIndicator', props)}
+      style={getStyles('dropdownIndicator', props)}
       className={cx(
         {
           indicator: true,
@@ -96,7 +94,7 @@ export const ClearIndicator = (props: IndicatorProps) => {
   const { children, className, cx, getStyles, innerProps } = props;
   return (
     <div
-      css={getStyles('clearIndicator', props)}
+      style={getStyles('clearIndicator', props)}
       className={cx(
         {
           indicator: true,
@@ -137,7 +135,7 @@ export const IndicatorSeparator = (props: IndicatorProps) => {
   return (
     <span
       {...innerProps}
-      css={getStyles('indicatorSeparator', props)}
+      style={getStyles('indicatorSeparator', props)}
       className={cx({ 'indicator-separator': true }, className)}
     />
   );
@@ -147,7 +145,7 @@ export const IndicatorSeparator = (props: IndicatorProps) => {
 // Loading
 // ==============================
 
-const loadingDotAnimations = keyframes`
+const loadingDotAnimations = `
   0%, 80%, 100% { opacity: 0; }
   40% { opacity: 1; }
 `;
@@ -180,7 +178,7 @@ export const loadingIndicatorCSS = ({
 type DotProps = { delay: number, offset: boolean };
 const LoadingDot = ({ delay, offset }: DotProps) => (
   <span
-    css={{
+    style={{
       animation: `${loadingDotAnimations} 1s ease-in-out ${delay}ms infinite;`,
       backgroundColor: 'currentColor',
       borderRadius: '1em',
@@ -209,7 +207,7 @@ export const LoadingIndicator = (props: LoadingIconProps) => {
 
   return (
     <div
-      css={getStyles('loadingIndicator', props)}
+      style={getStyles('loadingIndicator', props)}
       className={cx(
         {
           indicator: true,

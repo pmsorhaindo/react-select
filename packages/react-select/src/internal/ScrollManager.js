@@ -1,6 +1,4 @@
 // @flow
-/** @jsx jsx */
-import { jsx } from '@emotion/react';
 import React, { type Element } from 'react';
 import useScrollCapture from './useScrollCapture';
 import useScrollLock from './useScrollLock';
@@ -48,7 +46,7 @@ export default function ScrollManager({
       {lockEnabled && (
         <div
           onClick={blurSelectInput}
-          css={{ position: 'fixed', left: 0, bottom: 0, right: 0, top: 0 }}
+          style={{ position: 'fixed', left: 0, bottom: 0, right: 0, top: 0 }}
         />
       )}
       {children(targetRef)}

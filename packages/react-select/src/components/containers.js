@@ -1,7 +1,6 @@
 // @flow
-/** @jsx jsx */
+import React from 'react';
 import { type Node } from 'react';
-import { jsx } from '@emotion/react';
 import type { CommonProps, KeyboardEventHandler } from '../types';
 
 // ==============================
@@ -40,7 +39,7 @@ export const SelectContainer = (props: ContainerProps) => {
   } = props;
   return (
     <div
-      css={getStyles('container', props)}
+      style={getStyles('container', props)}
       className={cx(
         {
           '--is-disabled': isDisabled,
@@ -94,7 +93,7 @@ export const ValueContainer = (props: ValueContainerProps) => {
 
   return (
     <div
-      css={getStyles('valueContainer', props)}
+      style={getStyles('valueContainer', props)}
       className={cx(
         {
           'value-container': true,
@@ -138,7 +137,7 @@ export const IndicatorsContainer = (props: IndicatorContainerProps) => {
 
   return (
     <div
-      css={getStyles('indicatorsContainer', props)}
+      style={getStyles('indicatorsContainer', props)}
       className={cx(
         {
           indicators: true,

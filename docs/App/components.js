@@ -1,8 +1,6 @@
 // @flow
-/** @jsx jsx */
 import { Component, type ElementConfig } from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { jsx } from '@emotion/react';
 
 const navWidth = 180;
 const appWidth = 800;
@@ -13,7 +11,7 @@ const largeDevice = '@media (min-width: 770px)';
 
 export const AppContainer = (props: any) => (
   <div
-    css={{
+    style={{
       boxSizing: 'border-box',
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -26,7 +24,7 @@ export const AppContainer = (props: any) => (
 );
 export const PageContent = (props: any) => (
   <div
-    css={{
+    style={{
       paddingBottom: contentGutter * 4,
       paddingTop: contentGutter,
 
@@ -39,7 +37,7 @@ export const PageContent = (props: any) => (
 );
 export const AppContent = (props: any) => (
   <div
-    css={{
+    style={{
       flex: '1 1 auto',
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -58,7 +56,7 @@ export const AppContent = (props: any) => (
 
 export const PrimaryNav = (props: any) => (
   <div
-    css={{
+    style={{
       backgroundColor: 'rgba(0, 0, 0, 0.11)',
       fontWeight: 500,
       overflowX: 'auto',
@@ -68,7 +66,7 @@ export const PrimaryNav = (props: any) => (
     }}
   >
     <div
-      css={{
+      style={{
         boxSizing: 'border-box',
         display: 'flex',
         maxWidth: 800,
@@ -82,7 +80,7 @@ export const PrimaryNav = (props: any) => (
 type PrimaryNavItemProps = ElementConfig<typeof Link> & { selected: boolean };
 export const PrimaryNavItem = ({ selected, ...props }: PrimaryNavItemProps) => (
   <Link
-    css={{
+    style={{
       color: selected ? 'white' : '#DEEBFF',
       display: 'inline-block',
       opacity: selected ? 1 : 0.8,

@@ -1,7 +1,6 @@
 // @flow
-/** @jsx jsx */
+import React from 'react';
 import { Component, type ElementRef } from 'react';
-import { jsx } from '@emotion/react';
 import { Route, Switch } from 'react-router-dom';
 
 import type { RouterProps } from '../types';
@@ -107,7 +106,7 @@ export default NavSection;
 
 const Nav = (props: any) => (
   <div
-    css={{
+    style={{
       [smallDevice]: {
         backgroundColor: 'rgba(255, 255, 255, 0.96)',
         boxShadow: 'inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
@@ -136,7 +135,7 @@ type NavItemProps = { level: 2 | 3, selected: boolean };
 const NavItem = ({ level, selected, ...props }: NavItemProps) => (
   <div
     role="button"
-    css={{
+    style={{
       color: selected ? '#091e42' : '#7A869A',
       cursor: 'pointer',
       display: 'inline-block',

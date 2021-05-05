@@ -16,7 +16,6 @@ For the story behind this component, watch Jed's talk at React Conf 2019 - [buil
 Features include:
 
 - Flexible approach to data, with customisable functions
-- Extensible styling API with [emotion](https://emotion.sh)
 - Component Injection API for complete control over the UI behaviour
 - Controllable state props and modular architecture
 - Long-requested features like option groups, portal support, animation, and more

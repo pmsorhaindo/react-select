@@ -1,14 +1,12 @@
 // @flow
-/** @jsx jsx */
 import { type Node } from 'react';
-import { jsx } from '@emotion/react';
 
 // const smallDevice = '@media (max-width: 769px)';
 const largeDevice = '@media (min-width: 770px)';
 
 const Wrapper = props => (
   <div
-    css={{
+    style={{
       backgroundColor: '#FAFBFC',
       borderTop: '1px solid #EBECF0',
       color: '#7A869A',
@@ -20,7 +18,7 @@ const Wrapper = props => (
 );
 const Container = props => (
   <div
-    css={{
+    style={{
       boxSizing: 'border-box',
       maxWidth: 800,
       marginLeft: 'auto',
@@ -42,7 +40,7 @@ const Container = props => (
 const A = props => (
   <a
     {...props}
-    css={{
+    style={{
       color: '#505F79',
       textDecoration: 'none',
 
